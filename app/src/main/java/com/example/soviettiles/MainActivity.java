@@ -6,27 +6,20 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ConstraintLayout lay;
-    private Timer timer;
     private int loopcount = 1;
-    private float vert = -50;
     private float width;
     private float height;
     private ArrayList<Tile> tiles = new ArrayList<>();
@@ -148,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     lay.setBackgroundColor(Color.parseColor(randcolorhex()));
                     loopcount = 1;
                 }
-                vert++;
+
 
                 loopcount++;
                 if(!tiles.isEmpty()) {
