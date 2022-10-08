@@ -6,4 +6,4 @@ This is a game where the goal is to achieve the highest score possible by clicki
 
 | 图片 | 姓名 | 阵营 | 简介 |
 |-----|------|------|------|
-| ![](app/src/main/res/drawable/c1.jpeg)| 
+| ![](app/src/main/res/drawable/c1.jpeg) =200x| 
